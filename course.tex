@@ -1,0 +1,94 @@
+\input{preamble}
+
+\begin{document}
+
+    \author{Олег}
+    \title{Статья}
+
+    %\maketitle
+    \tableofcontents
+
+    \section{Lecture 1}
+
+    Доброе утро! \[ax = b\]
+
+    Nice!
+    \[\int_{-\infty}^{+\infty} e^{\frac{x^2}{2}} = \sqrt{2\pi} \]
+
+    \[ \forall \exists \]
+
+    \[ \frac54 \frac{stuff}2 \]
+
+    \[()  \big( \big) \bigg( \bigg) \]
+    \[\left( \right)\]
+
+    \subsection*{Подраздел, но без номера}
+
+    {\bfseries \itshapeЗдесь выделенное}, а здесь нет
+
+    Модификаторы размера и шрифта:
+    
+    {\Large Большой текст}, текст поменьше, {\small вообще маленький текст жесть}
+
+    {\rmfamily Шрифт}
+    {\sffamily Шрифт}
+    {\ttfamily Шрифт}
+    {\scshape Шрифт}
+    
+    \subsection{Простейшие окружения}
+    \begin{center}
+    Этот текст будет центрирован.
+    \end{center}
+    \begin{flushright}
+        А этот смещен вправо.
+    \end{flushright}
+
+    %https://www.overleaf.com/learn/latex/Theorems_and_proofs
+
+    %"--- для разделения подлежащего и сказуемого
+    --- для других ситуаций с тире в тексте
+    -- для указания числовых промежутков
+    - дефисы
+    $-$ знак минус
+
+    \section{Lecture 2}
+
+    \subsection{Отступы}
+
+    \hspace{5px} \vspace{5px} 
+    \hspace*{5px} \vspace*{5px} –-- не сокращаемые концом строки
+    \hfill \vfill – распорки
+
+    \subsection{Переходы на новую строку}
+
+    поговорим о жизни 
+    \par или нет
+    \\ или да
+    \newline а все-таки
+
+    \subsection[Секции]{Основные разделы}
+    documentclass определяет разделы, которые можно использовать
+    \begin{enumerate}
+        \item part
+        \item chapter –-- в article не рабоатет
+        \item section
+        \item subsection
+        \item paragraph
+        \item subparagraph
+    \end{enumerate}
+
+    % синтаксис: \section_name[short_title]{full_title}
+
+    \subsection{Генерация разделов}
+
+    \noindent maketitle –-- author, date, title
+    \\ tableofcontents
+    \\ listoffigures
+    \\ listoftables
+    \\ appendix
+
+    $$\mathrm{id}$$
+
+
+    
+\end{document}
